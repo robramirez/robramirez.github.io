@@ -16,22 +16,23 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
 
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner&display=swap" rel="stylesheet">
     <!-- Title that shows up in search and in tab-->
     <title>Robert Ramirez</title>
 
 </head>
 
-<body style="background-color: gray">
+<body style="background-color: #282C34">
     <div class="card">
         <p id="description">
             <b>Under Construction</b>
         </p>
 
-        <div class="links">
-            <i class="fas fa-file-alt"></i>
-            <i class="fab fa-linkedin"></i>
-            <i class="fab fa-github"></i>
-            <i class="fas fa-paper-plane"></i>
+        <div id="links">
+            <a href="#"><i class="fas fa-file-alt"></i></a>
+            <a href="https://www.linkedin.com/in/robert-ramirez1226/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/robramirez"><i class="fab fa-github"></i></a>
         </div>
     </div>
 </body>
@@ -39,20 +40,26 @@
 
 <style>
     body{
-        color: darkred;
+        font-family: 'Commissioner', sans-serif;
     }
 
-    .links{
-        text-align: center;
+    a:link {
+        color: #000000;
+    }
+    a:visited {
+        color: #000000;
+    }
+    a:hover {
+        color: lightgrey;
     }
 
     .card {
         text-align: center;
-        background-color: black;
+        background-color: #00796B;
         font-size: 3em;
         color: white;
 
-        padding: 100px;
+        padding: 3%;
         margin: 0;
         position: absolute;
         top: 50%;
@@ -61,11 +68,10 @@
         transform: translate(-50%, -50%);
 
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        border-radius: 5px; /* 5px rounded corners */
+        border-radius: 5px;
         transition: 0.3s;
     }
 
-    /* On mouse-over, add a deeper shadow */
     .card:hover {
         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     }
